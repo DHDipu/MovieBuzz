@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import PageNotFoundImage from "../assets/abc.jpg";
 import { useEffect } from "react";
+import { Button } from "../Components/Button";
 
 export const PageNotFound = () => {
   useEffect(() => {
-    document.title = `Page Not Found ${title}`;
+    document.title = `Page Not Found - Movie Buzz`;
   });
   return (
     <main>
@@ -20,10 +21,8 @@ export const PageNotFound = () => {
           </div>
         </div>
         <div>
-          <Link className="flex justify-center my-4" to="/">
-            <button className="text-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white py-2.5 px-1.5">
-              Back To Home
-            </button>
+          <Link className=" flex justify-center my-4" to="/">
+            <Button>Back To Movie-Buzz</Button>
           </Link>
         </div>
       </section>
